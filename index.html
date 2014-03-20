@@ -6,7 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 
 <link href="dist/css/tab.css" rel="stylesheet" type="text/css">
-
+<link href="table_style.css" rel="stylesheet" type="text/css">
 <script src="dist/js/jquery-1.11.0.js"></script>
 <script src="dist/js/bootstrap.js"></script>
 </head>
@@ -16,20 +16,10 @@
 <!-- tab-->
 <div class="header_tab_wrapper">
   <ul class="tabs set_margin_top_10">
-  <li rel="tab1"><img src="dist/images/home_icon.png" width="19" height="17" />&nbsp; FMF CRM</li>
-  <li rel="tab2" class="active" ><img src="dist/images/create_icon.png" width="19" height="19" />&nbsp;  Create</li>
-  <li rel="tab3"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</li>
-  <li rel="tab4"><img src="dist/images/other_icon.png" width="19" height="19" /> &nbsp; Other</li>
-  <li rel="tab5"><img src="dist/images/about_icon.png" width="19" height="19" /> &nbsp; About</li>
-   
-   
-    <li rel="tab6" style="float:right" class="profile_tab" >
-    <div class="prof_pic"><img src="dist/images/prof_pic_default.png" width="36" height="36"/></div>
-    <div class="user_det">
-    <div class="username">Saman Perera Silva</div><div class="role">Administrator</div>
-    </div>
-    <div class="notifications"><div class="notif_bg" >12</div></div>
-</li>
+  <li rel="tab1">&nbsp; Credit Card</li>
+  <li rel="tab2" class="active" >Online Banking</li>
+  <li rel="tab3"> EMI</li>
+  
 
 
 
@@ -39,8 +29,54 @@
 <div class="tab_container">
   <h5 class="tab_drawer_heading" rel="tab1"><img src="dist/images/home_icon.png" width="19" height="19" />&nbsp; FMF CRM</h5>
   <div id="tab1" class="tab_content" >
-  <h4>findmyfare CRM System version 1.0 beta</h4>
-    <p style="font-size:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+  <h4>Select your option</h4>
+ <table id="newspaper-b" summary="2007 Major IT Companies' Profit">
+    <thead>
+    	<tr>
+        	<th scope="col">Company</th>
+            <th scope="col">Q1</th>
+            <th scope="col">Q2</th>
+            <th scope="col">Q3</th>
+            <th scope="col">Q4</th>
+        </tr>
+    </thead>
+        <tfoot>
+    	<tr>
+        	<td colspan="5"><em>The above data were fictional and made up, please do not sue me</em></td>
+        </tr>
+    </tfoot>
+    <tbody>
+    	<tr>
+        	<td>Microsoft</td>
+            <td>20.3</td>
+            <td>30.5</td>
+            <td>23.5</td>
+            <td>40.3</td>
+        </tr>
+        <tr>
+        	<td>Google</td>
+            <td>50.2</td>
+            <td>40.63</td>
+            <td>45.23</td>
+            <td>39.3</td>
+        </tr>
+        <tr>
+        	<td>Apple</td>
+            <td>25.4</td>
+            <td>30.2</td>
+            <td>33.3</td>
+            <td>36.7</td>
+        </tr>
+        <tr>
+        	<td>IBM</td>
+            <td>20.4</td>
+            <td>15.6</td>
+            <td>22.3</td>
+            <td>29.3</td>
+        </tr>
+    </tbody>
+</table>
+
   </div>
   <!-- #tab1 -->
   <h5 class="d_active tab_drawer_heading d_active" rel="tab2"><img src="dist/images/create_icon.png" width="19" height="19" />&nbsp;  Create</h5>
@@ -73,45 +109,9 @@
    
   </div>
   <!-- #tab3 -->
-  <h5 class="tab_drawer_heading" rel="tab4"><img src="dist/images/other_icon.png" width="19" height="19" /> &nbsp; Other</h5>
-  <div id="tab4" class="tab_content">
-   
-   <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/creditcard_icon.png" width="27" height="18"/>Credit Card </a></div>
-     <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/cash_icon.png" width="18" height=""/>Payments-Cash </a></div>
-      <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/issue_icon.png" width="20" height="27"/>Flights Issue </a></div>
-   
-       
-       <div class="clearfix"></div>
-  </div>
-  <!-- #tab4 --> 
-  
-  <h5 class="tab_drawer_heading" rel="tab5"><img src="dist/images/about_icon.png" width="19" height="19" /> &nbsp; About</h5>
-  <div id="tab5" class="tab_content">
-  <h4>About</h4>
-    <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-  </div>
-  <!-- #tab5 --> 
+ 
   
 
-  
-  
-  <div class="tab_drawer_heading res_sp_profile" rel="tab6">
-  <div class="res_sp_profile_wrap">
-  <h5><img src="dist/images/res_profile_icon.png" width="19" height="19" /> &nbsp; Profile </h5>
-  </div>
-  <div class="res_prof_wrap">
-  <div class="prof_pic"><img src="dist/images/prof_pic_default.png" width="36" height="36"/></div>
-    <div class="user_det">
-    <div class="username">Saman Perera Silva</div><div class="role">Administrator</div>
-    </div>
-    <div class="notifications"><div class="notif_bg" >12</div></div>
-  </div>
-  </div>
-  <div id="tab6" class="tab_content">
-  <h4>Tab 6 content</h4>
-    <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-  </div>
-  <!-- #tab6 --> 
 </div>
 <!-- .tab_container -->
 </div> <!--.header_tab_wrapper-->
