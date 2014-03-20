@@ -1,3 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
+body{margin:0;padding:0;}
+.container{
+	background-size: 100% 1000px;
+background-repeat: no-repeat;
+width: 940px;
+margin: 0 auto;
+background-color: white;
+padding-left: 10px;
+padding-right: 10px;
+box-shadow: 0px 5px 10px 5px gainsboro;
+border-left-width: 1px;
+border-left-color: #d8dcdf;
+border-left-style: solid;
+border-right-width: 1px;
+border-right-color: #d8dcdf;
+border-right-style: solid;
+min-height:800px;
+	}
 
