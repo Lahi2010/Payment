@@ -3,12 +3,37 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-
+<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+<link href="dist/css/style_radio.css" rel="stylesheet" type="text/css">
 <link href="dist/css/tab.css" rel="stylesheet" type="text/css">
-<link href="table_style.css" rel="stylesheet" type="text/css">
 <script src="dist/js/jquery-1.11.0.js"></script>
 <script src="dist/js/bootstrap.js"></script>
+
+<script>
+$(function(){
+	
+	
+	
+	
+	$('.css-checkbox').click(function(e){
+	//	alert($('input[type="radio"]:checked').val());
+	$('.flat_table tbody tr:nth-child(odd)').css( "background-color", "#FFCE77" );
+	$('.flat_table tbody tr:nth-child(even)').css( "background-color", "#FFD891" );
+$('.flat_table tbody tr td:nth-child(2)').css( "color", "#553600 " );
+	$(this).parent().parent().css( "background-color", "rgb(255, 122, 0)" );	
+	$(this).parent().parent().children('td').eq(1).css( "color", "#FFFFFF");
+	
+	
+	
+	
+	
+
+
+	});
+	 });
+</script>
+
+
 </head>
 
 <body>
@@ -16,11 +41,13 @@
 <!-- tab-->
 <div class="header_tab_wrapper">
   <ul class="tabs set_margin_top_10">
-  <li rel="tab1">&nbsp; Credit Card</li>
-  <li rel="tab2" class="active" >Online Banking</li>
-  <li rel="tab3"> EMI</li>
+  <li rel="tab1" class="active">&nbsp; Credit Card</li>
+  <li rel="tab2"> Debit Card</li>
+  <li rel="tab3"  >Online Banking</li>
+  <li rel="tab4"> Monthly Payments</li>
   
 
+<li rel="tab5">Others</li>
 
 
  
@@ -28,89 +55,398 @@
 </ul>
 <div class="tab_container">
   <h5 class="tab_drawer_heading" rel="tab1"><img src="dist/images/home_icon.png" width="19" height="19" />&nbsp; FMF CRM</h5>
-  <div id="tab1" class="tab_content" >
+  <div id="tab1" class="tab_content" style="display:block;" >
   <h4>Select your option</h4>
- <table id="newspaper-b" summary="2007 Major IT Companies' Profit">
-    <thead>
-    	<tr>
-        	<th scope="col">Company</th>
-            <th scope="col">Q1</th>
-            <th scope="col">Q2</th>
-            <th scope="col">Q3</th>
-            <th scope="col">Q4</th>
-        </tr>
-    </thead>
-        <tfoot>
-    	<tr>
-        	<td colspan="5"><em>The above data were fictional and made up, please do not sue me</em></td>
-        </tr>
-    </tfoot>
-    <tbody>
-    	<tr>
-        	<td>Microsoft</td>
-            <td>20.3</td>
-            <td>30.5</td>
-            <td>23.5</td>
-            <td>40.3</td>
-        </tr>
-        <tr>
-        	<td>Google</td>
-            <td>50.2</td>
-            <td>40.63</td>
-            <td>45.23</td>
-            <td>39.3</td>
-        </tr>
-        <tr>
-        	<td>Apple</td>
-            <td>25.4</td>
-            <td>30.2</td>
-            <td>33.3</td>
-            <td>36.7</td>
-        </tr>
-        <tr>
-        	<td>IBM</td>
-            <td>20.4</td>
-            <td>15.6</td>
-            <td>22.3</td>
-            <td>29.3</td>
-        </tr>
-    </tbody>
+  <div class="pay_table">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
+<thead>
+  <tr>
+    <th width="100">Bank</th>
+    <th>Offers</th>
+    <th width="80">Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" value="Sampath" /><label for="radio1" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/commercial.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" value="HSBC" /><label for="radio2" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hsbc.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" /><label for="radio3" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/seylan.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+   <td><input type="radio" name="radiog_lite" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/ndb.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="radio5" class="css-checkbox" /><label for="radio5" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/peoples.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="radio7" class="css-checkbox" /><label for="radio7" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hnb.png" width="194" height="49"/></td>
+      <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="radio8" class="css-checkbox" /><label for="radio8" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/panasia.png" width="194" height="49"/></td>
+       <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="radio9" class="css-checkbox" /><label for="radio9" class="css-label"></label></td>
+  </tr>
+   <tr>
+    <td><img src="dist/images/bank_logos/boc.png" width="194" height="49"/></td>
+    <td>Aurudu Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April. <br>
+Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April.</td>
+  <td><input type="radio" name="radiog_lite" id="radio10" class="css-checkbox" /><label for="radio10" class="css-label"></label></td>
+  </tr>
+ 
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tfoot>
 </table>
+</div>
 
   </div>
   <!-- #tab1 -->
   <h5 class="d_active tab_drawer_heading d_active" rel="tab2"><img src="dist/images/create_icon.png" width="19" height="19" />&nbsp;  Create</h5>
-  <div id="tab2" class="tab_content" style="display:block;">
+  <div id="tab2" class="tab_content" >
 
-  
-    <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/invoice_icon.png" width="23" height="28"/>Flights Invoice </a></div>
-     <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/booking_icon.png" width="27" height="26"/>Hotel Booking </a></div>
-     
-       
-       <div class="clearfix"></div>
-        
+ <div class="pay_table">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
+<thead>
+  <tr>
+    <th width="100">Bank</th>
+    <th>Offers</th>
+    <th width="80">Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab2_radio1" class="css-checkbox" value="Sampath" /><label for="tab2_radio1" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/commercial.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab2_radio2" class="css-checkbox" value="HSBC" /><label for="tab2_radio2" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hsbc.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab2_radio3" class="css-checkbox" /><label for="tab2_radio3" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/seylan.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+   <td><input type="radio" name="radiog_lite" id="tab2_radio4" class="css-checkbox" /><label for="tab2_radio4" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/ndb.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab2_radio5" class="css-checkbox" /><label for="tab2_radio5" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/peoples.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab2_radio6" class="css-checkbox" /><label for="tab2_radio6" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab2_radio7" class="css-checkbox" /><label for="tab2_radio7" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hnb.png" width="194" height="49"/></td>
+      <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab2_radio8" class="css-checkbox" /><label for="tab2_radio8" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/panasia.png" width="194" height="49"/></td>
+       <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab2_radio9" class="css-checkbox" /><label for="tab2_radio9" class="css-label"></label></td>
+  </tr>
+   <tr>
+    <td><img src="dist/images/bank_logos/boc.png" width="194" height="49"/></td>
+    <td>Aurudu Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April. <br>
+Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April.</td>
+  <td><input type="radio" name="radiog_lite" id="tab2_radio10" class="css-checkbox" /><label for="tab2_radio10" class="css-label"></label></td>
+  </tr>
+ 
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tfoot>
+</table>
+</div>
+         
   </div>
   <!-- #tab2 -->
   <h5 class="tab_drawer_heading" rel="tab3"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
   <div id="tab3" class="tab_content">
  
-   
-   <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Common </a></div>
-     <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Beatmyfare </a></div>
-      <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Getmyfare </a></div>
-       <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Flights </a></div>
-      
-       <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Hotels </a></div>
-     <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Inter Hotels </a></div>
-      <div class="col-md-2"><a href="#" class="tab_button"><img src="dist/images/grid_icon.png" width="28" height="28"/>Budget Flights </a></div>
-       
-       <div class="clearfix"></div>
-   
+   <div class="pay_table">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
+<thead>
+  <tr>
+    <th width="100">Bank</th>
+    <th>Offers</th>
+    <th width="80">Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab3_radio1" class="css-checkbox" value="Sampath" /><label for="tab3_radio1" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/commercial.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab3_radio2" class="css-checkbox" value="HSBC" /><label for="tab3_radio2" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hsbc.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab3_radio3" class="css-checkbox" /><label for="tab3_radio3" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/seylan.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+   <td><input type="radio" name="radiog_lite" id="tab3_radio4" class="css-checkbox" /><label for="tab3_radio4" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/ndb.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab3_radio5" class="css-checkbox" /><label for="tab3_radio5" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/peoples.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab3_radio6" class="css-checkbox" /><label for="tab3_radio6" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab3_radio7" class="css-checkbox" /><label for="tab3_radio7" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hnb.png" width="194" height="49"/></td>
+      <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab3_radio8" class="css-checkbox" /><label for="tab3_radio8" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/panasia.png" width="194" height="49"/></td>
+       <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab3_radio9" class="css-checkbox" /><label for="tab3_radio9" class="css-label"></label></td>
+  </tr>
+   <tr>
+    <td><img src="dist/images/bank_logos/boc.png" width="194" height="49"/></td>
+    <td>Aurudu Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April. <br>
+Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April.</td>
+  <td><input type="radio" name="radiog_lite" id="tab3_radio10" class="css-checkbox" /><label for="tab3_radio10" class="css-label"></label></td>
+  </tr>
+ 
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tfoot>
+</table>
+</div>
    
   </div>
   <!-- #tab3 -->
+    <h5 class="tab_drawer_heading" rel="tab4"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
+  <div id="tab4" class="tab_content">
  
+   <div class="pay_table">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
+<thead>
+  <tr>
+    <th width="100">Bank</th>
+    <th>Offers</th>
+    <th width="80">Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab4_radio1" class="css-checkbox" value="Sampath" /><label for="tab4_radio1" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/commercial.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab4_radio2" class="css-checkbox" value="HSBC" /><label for="tab4_radio2" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hsbc.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab4_radio3" class="css-checkbox" /><label for="tab4_radio3" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/seylan.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+   <td><input type="radio" name="radiog_lite" id="tab4_radio4" class="css-checkbox" /><label for="tab4_radio4" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/ndb.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab4_radio5" class="css-checkbox" /><label for="tab4_radio5" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/peoples.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab4_radio6" class="css-checkbox" /><label for="tab4_radio6" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab4_radio7" class="css-checkbox" /><label for="tab4_radio7" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hnb.png" width="194" height="49"/></td>
+      <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab4_radio8" class="css-checkbox" /><label for="tab4_radio8" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/panasia.png" width="194" height="49"/></td>
+       <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab4_radio9" class="css-checkbox" /><label for="tab4_radio9" class="css-label"></label></td>
+  </tr>
+   <tr>
+    <td><img src="dist/images/bank_logos/boc.png" width="194" height="49"/></td>
+    <td>Aurudu Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April. <br>
+Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April.</td>
+  <td><input type="radio" name="radiog_lite" id="tab4_radio10" class="css-checkbox" /><label for="tab4_radio10" class="css-label"></label></td>
+  </tr>
+ 
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tfoot>
+</table>
+</div>
+   
+  </div>
+  <!-- #tab4 -->
   
+    <h5 class="tab_drawer_heading" rel="tab5"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
+  <div id="tab5" class="tab_content">
+ 
+   <div class="pay_table">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
+<thead>
+  <tr>
+    <th width="100">Bank</th>
+    <th>Offers</th>
+    <th width="80">Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab5_radio1" class="css-checkbox" value="Sampath" /><label for="tab5_radio1" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/commercial.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab5_radio2" class="css-checkbox" value="HSBC" /><label for="tab5_radio2" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hsbc.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab5_radio3" class="css-checkbox" /><label for="tab5_radio3" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/seylan.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+   <td><input type="radio" name="radiog_lite" id="tab5_radio4" class="css-checkbox" /><label for="tab5_radio4" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/ndb.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab5_radio5" class="css-checkbox" /><label for="tab5_radio5" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/peoples.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+    <td><input type="radio" name="radiog_lite" id="tab5_radio6" class="css-checkbox" /><label for="tab5_radio6" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
+    <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab5_radio7" class="css-checkbox" /><label for="tab5_radio7" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/hnb.png" width="194" height="49"/></td>
+      <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab5_radio8" class="css-checkbox" /><label for="tab5_radio8" class="css-label"></label></td>
+  </tr>
+  <tr>
+    <td><img src="dist/images/bank_logos/panasia.png" width="194" height="49"/></td>
+       <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
+  <td><input type="radio" name="radiog_lite" id="tab5_radio9" class="css-checkbox" /><label for="tab5_radio9" class="css-label"></label></td>
+  </tr>
+   <tr>
+    <td><img src="dist/images/bank_logos/boc.png" width="194" height="49"/></td>
+    <td>Aurudu Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April. <br>
+Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16th March to 30th April.</td>
+  <td><input type="radio" name="radiog_lite" id="tab5_radio10" class="css-checkbox" /><label for="tab5_radio10" class="css-label"></label></td>
+  </tr>
+ 
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tfoot>
+</table>
+</div>
+   
+  </div>
+  <!-- #tab5 -->
+ 
+ <input type="button" class="pay_btn" value="Pay">
 
 </div>
 <!-- .tab_container -->
