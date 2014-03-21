@@ -89,4 +89,4 @@ background: #ff8c00;
   .label_text{ display:block;float:left; font-size:18px; padding-left:10px; }
   .details_wrap{ padding:12px 0 12px 0; background-color:rgba(249,198,91,0.5); border-left:10px solid rgba(255,0,0,1);}
   #chk_confirm{ width:20px; height:20px; border-radius:0px !important;}
-  .confirm_label{line-height:20px;}
+  .confirm_label{line-height:20px; cursor:pointer; margin-left:5px;}
