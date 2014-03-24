@@ -1,0 +1,6 @@
+
+.pay_table input[type=radio].css-checkbox {
+							display:block; margin:0 auto; cursor:pointer; width:20px; height:20px;
+						}
+						
+						.pay_table input[type=radio].css-checkbox + label.css-label{display:none;}

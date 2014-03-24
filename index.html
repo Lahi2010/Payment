@@ -4,7 +4,17 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <link href="dist/css/style.css" rel="stylesheet" type="text/css">
-<link href="dist/css/style_radio.css" rel="stylesheet" type="text/css">
+
+ <link rel="stylesheet" type="text/css" href="dist/css/style_radio.css" />
+
+<!--[if IE 8]>
+	  <link rel="stylesheet" type="text/css" href="dist/css/style_radio_for_ie.css" />
+<![endif]-->
+
+
+
+
+
 <link href="dist/css/tab.css" rel="stylesheet" type="text/css">
 
 <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -14,7 +24,8 @@
 <script>
 $(function(){
 	
-	
+		$('.flat_table tbody tr:nth-child(odd)').css( "background-color", "#FFCE77" );
+	$('.flat_table tbody tr:nth-child(even)').css( "background-color", "#FFD891" );
 	
 	
 	$('.css-checkbox').click(function(e){
@@ -34,7 +45,37 @@ $('.flat_table tbody tr td:nth-child(2)').css( "color", "#553600 " );
 	});
 	 });
 </script>
+<script>
+function check_valid(){
+	
 
+
+
+		var check_return = 0;
+	if(!$("#chk_confirm").is(':checked')){
+		$(".alert_box_check_box").fadeIn(500);		
+		$(".alert_box_check_box").delay(5000).fadeOut("slow");
+		//return false;
+		check_return = 0;
+	}else{check_return = 1;}
+	
+	 if(!$("input:radio.css-checkbox").is(":checked")){
+		$(".alert_box_radio_group").fadeIn(500);		
+		$(".alert_box_radio_group").delay(5000).fadeOut("slow");
+		//return false;
+		check_return = 0;
+		}else{check_return = 1;}
+		
+		
+		if(check_return==1){ 
+		
+		return true;
+		}else{
+	return false;
+			}
+			}
+
+</script>
 
 </head>
 
@@ -85,7 +126,7 @@ H79554
   <h5 class="tab_drawer_heading" rel="tab1"><img src="dist/images/home_icon.png" width="19" height="19" />&nbsp; FMF CRM</h5>
   <div id="tab1" class="tab_content" style="display:block;" >
   <div class="col-md-12">
-  <h4>Select your option</h4>
+  <h4><strong> Credit Card Payment</strong></h4>
   </div>
   <div class="pay_table">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
@@ -100,7 +141,7 @@ H79554
   <tr>
     <td><img src="dist/images/bank_logos/sampath.png" width="194" height="49"/> </td>
     <td>Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text. Lorem ipsum dummy text.Lorem ipsum dummy text.Lorem ipsum dummy text.</td>
-    <td><input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" value="Sampath" /><label for="radio1" class="css-label"></label></td>
+    <td><input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" value="Sampath" /><label for="radio1" class="css-label test"></label></td>
   </tr>
   <tr>
     <td><img src="dist/images/bank_logos/standard_charted.png" width="194" height="49"/></td>
@@ -179,7 +220,7 @@ Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16t
   <h5 class="d_active tab_drawer_heading d_active" rel="tab2"><img src="dist/images/create_icon.png" width="19" height="19" />&nbsp;  Create</h5>
   <div id="tab2" class="tab_content" >
 <div class="col-md-12">
-  <h4>Select your option</h4>
+  <h4><strong>Debit Card Payment</strong></h4>
   </div>
  <div class="pay_table">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
@@ -273,7 +314,7 @@ Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16t
   <h5 class="tab_drawer_heading" rel="tab3"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
   <div id="tab3" class="tab_content">
  <div class="col-md-12">
-  <h4>Select your option</h4>
+  <h4><strong> Online Banking </strong> </h4>
   </div>
    <div class="pay_table">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
@@ -367,7 +408,7 @@ Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16t
     <h5 class="tab_drawer_heading" rel="tab4"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
   <div id="tab4" class="tab_content">
  <div class="col-md-12">
-  <h4>Select your option</h4>
+  <h4><strong>Monthly Payment</strong></h4>
   </div>
    <div class="pay_table">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
@@ -462,7 +503,7 @@ Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16t
     <h5 class="tab_drawer_heading" rel="tab5"><img src="dist/images/view_icon.png" width="19" height="19" /> &nbsp; View</h5>
   <div id="tab5" class="tab_content">
  <div class="col-md-12">
-  <h4>Select your option</h4>
+  <h4><strong>Other</strong></h4>
   </div>
    <div class="pay_table">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="flat_table">
@@ -554,12 +595,23 @@ Hotels Offer : Customers can get 10 % discount for Colombo to Singapore from 16t
   </div>
   <!-- #tab5 -->
  <div class="col-lg-12">
- <div class="col-md-10">
+<div class="col-md-12">
+ <div class="alert_box error alert_box_check_box"><img src="dist/images/error_icon_alert.png" width="36" height="36"/> Please confirm your payment !</div>
+ 
+  <div class="alert_box error alert_box_radio_group"><img src="dist/images/error_icon_alert.png" width="36" height="36"/> Please select a payment method !</div>
+</div>
+ <div class="col-md-9">
  <div class="confim_check_wrap">
- <input type="checkbox" id="chk_confirm"><label for="chk_confirm" class="confirm_label">Confirming is you have understood and agreed to the Terms and Conditions of Findmyfare.com .</label>
+ <span class="check_box_wrap">
+ <input type="checkbox" id="chk_confirm"></span><span class="statement_wrap"><label for="chk_confirm" class="confirm_label">Confirming is you have understood and agreed to the Terms and Conditions of Findmyfare.com .</label></span>
  </div></div>
- <div class="col-md-2">
- <input type="button" class="pay_btn" value="Pay">
+ <div class="col-md-3">
+<!-- <input type="button" class="pay_btn" value="Pay" onClick="check_valid()">-->
+ 
+ <button type="button" class=" pay_btn btn-lg"  onClick="check_valid()">
+  <span class="btn_icon" ><img src="dist/images/pay_icon.png" width="40" height="40"/></span><span class="btn_value"> Proceed payment</span>
+</button>
+
 </div></div>
 </div>
 <!-- .tab_container -->

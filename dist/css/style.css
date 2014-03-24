@@ -52,25 +52,25 @@ background:#FFCE77;
 text-align:center;
 }
 
-.flat_table thead tr{ height:40px; font-weight:lighter; background-color:rgba(118, 189, 255, 1);}
+.flat_table thead tr{ height:40px; font-weight:lighter; background-color:#76bdff;}
 .flat_table tbody tr{ height:60px; }
 .flat_table tbody tr td:nth-child(1){ height:60px; line-height: 12px;}
 .flat_table tbody tr td:nth-child(2){ height:60px; line-height: 16px; font-size:13px;font-weight:bold; padding-left:5px; }
 
-.pay_btn{ width:120px; height:40px; line-height:32px; border:2px solid #FFF;
+.pay_btn{ width:220px; height:40px; line-height:32px; 
+
+padding: 0px !important;
+border:none;
+border-radius: 0px !important;
+
+outline:none;
 
 background: #ff8c00;
-  background-image: -webkit-linear-gradient(top, #ff8c00, #e89b00);
-  background-image: -moz-linear-gradient(top, #ff8c00, #e89b00);
-  background-image: -ms-linear-gradient(top, #ff8c00, #e89b00);
-  background-image: -o-linear-gradient(top, #ff8c00, #e89b00);
-  background-image: linear-gradient(to bottom, #ff8c00, #e89b00);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
+ 
+ 
 
 
- color:#FFF; font-size:20px; font-weight:bold; cursor:pointer; float:right; margin:10px;/* Firefox */
+ color:#FFF; font-size:14px; cursor:pointer; float:right; margin:10px;/* Firefox */
     -moz-transition: all .2s ease-in;
     /* WebKit */
     -webkit-transition: all .2s ease-in;
@@ -79,14 +79,24 @@ background: #ff8c00;
     /* Standard */
     transition: all .2s ease-in;
 }
-.pay_btn:hover{background: #ff8c00;
-  background-image: -webkit-linear-gradient(top, #ff8c00, #e08e00);
-  background-image: -moz-linear-gradient(top, #ff8c00, #e08e00);
-  background-image: -ms-linear-gradient(top, #ff8c00, #e08e00);
-  background-image: -o-linear-gradient(top, #ff8c00, #e08e00);
-  background-image: linear-gradient(to bottom, #ff8c00, #e08e00); color:#823E00;}
+.btn_icon{float:left;}
+.btn_value{display:block; line-height:40px;}
+.pay_btn:hover{background: #9c2f00;
+  color:#FFF;}
   .special_text{ display:block; font-size:18px; font-weight:bold; float:left; padding-left:10px;}
   .label_text{ display:block;float:left; font-size:18px; padding-left:10px; }
   .details_wrap{ padding:12px 0 12px 0; background-color:rgba(249,198,91,0.5); border-left:10px solid rgba(255,0,0,1);}
   #chk_confirm{ width:20px; height:20px; border-radius:0px !important;}
+  .confim_check_wrap{padding: 10px;
+height: 40px;
+line-height: 40px;}
+.check_box_wrap{display: block;
+float: left;
+padding-top: 4px;}
+.statement_wrap{display: block;
+float: left;}
   .confirm_label{line-height:20px; cursor:pointer; margin-left:5px;}
+  
+  /* alert box */
+  .error{ background-color:#FF0000; color:#FFFFFF;}
+  .alert_box{width:100%; height:36px; line-height:34px; font-size:14px; border-radius:18px; margin:0 0 15px 0; display:none;}

@@ -1,6 +1,13 @@
+/*
 .pay_table input[type=radio].css-checkbox {
 							display:none;
 						}
+						
+	*/		
+	.pay_table input[type=radio].css-checkbox {
+							display:none;
+						}			
+					
 
 						.pay_table input[type=radio].css-checkbox + label.css-label {
 							padding-left:32px;

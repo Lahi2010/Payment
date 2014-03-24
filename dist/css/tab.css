@@ -26,12 +26,12 @@
 
 
 .header_tab_wrapper ul.tabs li:hover {
-	background-color:rgba(204, 139, 0, 1);
+	background-color:#cc8b00;
 	color: #fff;
 }
 
 .header_tab_wrapper ul.tabs li.active {
-	background-color: rgba(204, 139, 0, 1);
+	background-color:#cc8b00;
 	color: #fff;
 
 	display: block;
@@ -59,83 +59,11 @@
 
 
 
-@media screen and (min-width: 992px) {
+
 	.tab_container {
 	/*	height:130px !important;*/
-		background: rgba(255, 224, 158, 0.8);
+		background: #fee5b0;
 	}
 	
 	
 	
-	
-	}
-@media screen and (max-width:992px){.tab_content{background: rgba(0,45,57,.8);}
-body {
-
-background-image:url(../images/background_res_small.jpg); 
-}
-}
-
-@media screen and (max-width:769px){
-body {
-
-background-image:url(../images/background_res_small_xx.jpg) ; 
-}
-}
-
-@media screen and (max-width:568px){
-body {
-
-background-image:url(../images/background_res_small_xx_xx.jpg) !important; 
-}
-}
-
-@media screen and (max-width:300px){
-.header, .header .logo {
-height:65px; 
-}
-.title_bar{font-size:12px ;}
-}
-
-@media screen and (max-width: 668px) {
-	
-	
-	.notif_bg {
-
-margin-left: 0px;
-}
-	.prof_pic {
-
-padding: 2px;
-line-height: 34px;
-}
-	.tabs {
-		display: none;
-	}
-	
-	
-	
-	
-	
-	.tab_drawer_heading {
-		background-color: #003f5d;
-		color: #fff;
-	/*	border-top: 1px solid #333;*/
-		margin: 2px 0;
-		padding: 10px 20px;
-		display: block;
-		cursor: pointer;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	.d_active {
-		background-color: rgba(0,45,57,1);
-		color: #fff;
-	}
-	
-	
-}
